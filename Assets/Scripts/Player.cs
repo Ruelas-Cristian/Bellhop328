@@ -14,18 +14,24 @@ public class Player : MonoBehaviour
     [SerializeField] private LayerMask groundLayer;
     // Start is called before the first frame update
 
+    // [Header("Interactable Objects")]
+    // [SerializeField] GameObject dresserUI;
+    // private bool dreUITest;
+    // private bool canMove = true;
+
     private bool interactableEnabled = false;
     private GameObject itemObject;
 
     void Start()
     {
-        
+        // dresserUI.SetActive(false);
     }
 
     // Update is called once per frame
     void Update()
     {
-        horizontal = Input.GetAxis("Horizontal");
+        // if(canMove)
+            horizontal = Input.GetAxis("Horizontal");
 
         if(Input.GetButtonDown("Jump") && IsGrounded()){
             rb.velocity = new Vector2(rb.velocity.x, jumpingPower);
@@ -79,6 +85,22 @@ public class Player : MonoBehaviour
             itemObject = other.gameObject;
         }
     }
+
+    // private void OnTriggerStay2D(Collider2D other) {
+    //     if(other.CompareTag("Dresser")){
+    //         if(Input.GetKeyDown(KeyCode.E)){
+    //             if(!dreUITest) {
+    //                 dresserUI.SetActive(true);
+    //                 dreUITest = true;
+    //                 canMove = false;
+    //             } else {
+    //                 dresserUI.SetActive(false);
+    //                 dreUITest = false;
+    //                 canMove = true;
+    //             }
+    //         }
+    //     }
+    // }
 
     private void OnTriggerExit2D(Collider2D other){
         itemObject = null;
