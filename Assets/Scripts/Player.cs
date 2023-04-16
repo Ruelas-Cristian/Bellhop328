@@ -12,26 +12,24 @@ public class Player : MonoBehaviour
     [SerializeField] private Rigidbody2D rb;
     [SerializeField] private Transform groundCheck;
     [SerializeField] private LayerMask groundLayer;
-    // Start is called before the first frame update
-
-    // [Header("Interactable Objects")]
-    // [SerializeField] GameObject dresserUI;
-    // private bool dreUITest;
-    // private bool canMove = true;
+    // Start is called before the first frame 
 
     private bool interactableEnabled = false;
     private GameObject itemObject;
-
+    private bool canMove = true;
     void Start()
     {
-        // dresserUI.SetActive(false);
+        Drawer_Script.draUITest = false;
     }
 
     // Update is called once per frame
     void Update()
     {
-        // if(canMove)
+        if (canMove)
             horizontal = Input.GetAxis("Horizontal");
+        else
+            horizontal = 0f;    //turns hoizontal movement to zero so player doesn't float away
+
         //Commented out code below is for jumping
         /*if(Input.GetButtonDown("Jump") && IsGrounded()){
             rb.velocity = new Vector2(rb.velocity.x, jumpingPower);
@@ -55,6 +53,17 @@ public class Player : MonoBehaviour
         }
         if(!itemObject && interactableEnabled){
             interactableEnabled = !interactableEnabled;
+        }
+
+        //Dresser interaction
+        if (Input.GetKeyDown(KeyCode.E)) {
+            if (Drawer_Script._playerOver && !Drawer_Script.draUITest) {
+                canMove = false;
+                Drawer_Script.draUITest = true;
+            } else if (Drawer_Script._playerOver && Drawer_Script.draUITest) {
+                canMove = true;
+                Drawer_Script.draUITest = false;
+            }
         }
     }
 
@@ -85,22 +94,6 @@ public class Player : MonoBehaviour
             itemObject = other.gameObject;
         }
     }
-
-    // private void OnTriggerStay2D(Collider2D other) {
-    //     if(other.CompareTag("Dresser")){
-    //         if(Input.GetKeyDown(KeyCode.E)){
-    //             if(!dreUITest) {
-    //                 dresserUI.SetActive(true);
-    //                 dreUITest = true;
-    //                 canMove = false;
-    //             } else {
-    //                 dresserUI.SetActive(false);
-    //                 dreUITest = false;
-    //                 canMove = true;
-    //             }
-    //         }
-    //     }
-    // }
 
     private void OnTriggerExit2D(Collider2D other){
         itemObject = null;

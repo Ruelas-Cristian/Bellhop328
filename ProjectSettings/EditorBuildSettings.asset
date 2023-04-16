@@ -5,6 +5,33 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
+  - enabled: 0
+    path: Assets/Scene/Test Scenes/Sample Scenes/SampleRoom.unity
+    guid: eccbaa83d2a73354389d198b87fd421b
+  - enabled: 0
+    path: Assets/Scene/Test Scenes/Lobby/Lobby.unity
+    guid: a249ba1033d054d42b3da2bfaba43c44
+  - enabled: 1
+    path: Assets/Scene/Lobby.unity
+    guid: cf585b7a346d5424faffaf7a578d2e3b
+  - enabled: 1
+    path: Assets/Scene/Elevator.unity
+    guid: 636e9ad2abd9e5844adffaf98702a8ac
+  - enabled: 1
+    path: Assets/Scene/Levels/Office.unity
+    guid: ada82cd775a68ea4d842968c3cd8fd7d
+  - enabled: 1
+    path: Assets/Scene/Levels/Level 2.unity
+    guid: ec5edcd2ab9f6e14e9eaca76f4901230
+  - enabled: 1
+    path: Assets/Scene/Levels/Level 3.unity
+    guid: ed044d3aa45ccb943b3d95aadd4e5b78
+  - enabled: 1
+    path: Assets/Scene/Levels/Level 4.unity
+    guid: fe6d199b87a775f48bed9b5658c592eb
+  - enabled: 1
+    path: Assets/Scene/Levels/Executive floor.unity
+    guid: 93145c25d3036944bae4e14ddccd6542
   - enabled: 1
     path: Assets/Scene/Hallways/Hallway level 1.unity
     guid: e8ecec052fe4be144a82b996b3d7dd15
@@ -15,18 +42,6 @@ EditorBuildSettings:
     path: Assets/Scene/Hallways/Hallway level 3.unity
     guid: d237aa5cc5e148943a63b1ce8c1220e1
   - enabled: 1
-    path: Assets/Scene/Hallways/Hallway level 4.unity
-    guid: dd5ce0963de904741a538fa209dd1059
-  - enabled: 1
     path: Assets/Scene/Hallways/Hallway Executive.unity
     guid: b9c6fe98390e3d342956c84602447e9d
-  - enabled: 1
-    path: Assets/Scene/Sample Scenes/SampleRoom.unity
-    guid: eccbaa83d2a73354389d198b87fd421b
-  - enabled: 0
-    path: Assets/Scene/Lobby/Lobby.unity
-    guid: a249ba1033d054d42b3da2bfaba43c44
-  - enabled: 1
-    path: Assets/Scene/Elevator.unity
-    guid: 636e9ad2abd9e5844adffaf98702a8ac
   m_configObjects: {}
