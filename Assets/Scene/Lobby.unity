@@ -2180,6 +2180,14 @@ PrefabInstance:
     serializedVersion: 2
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 3011762641997144693, guid: bc99b345f0a9c5e46bccc8b0343811b8, type: 3}
+      propertyPath: Entry
+      value: Welcome
+      objectReference: {fileID: 0}
+    - target: {fileID: 3011762641997144693, guid: bc99b345f0a9c5e46bccc8b0343811b8, type: 3}
+      propertyPath: BookText
+      value: 
+      objectReference: {fileID: 173831762}
     - target: {fileID: 3252299784852935109, guid: bc99b345f0a9c5e46bccc8b0343811b8, type: 3}
       propertyPath: m_Name
       value: Book
