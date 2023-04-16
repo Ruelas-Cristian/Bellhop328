@@ -2825,6 +2825,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0f047b5766ffce0418d5872233b0c3a1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  doorType: Elevator
 --- !u!4 &1585098777
 Transform:
   m_ObjectHideFlags: 0
