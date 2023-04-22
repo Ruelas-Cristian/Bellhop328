@@ -48,12 +48,12 @@ public class TalkingScript : MonoBehaviour, Interactable
     }
 
     public void enable(){
-        TalkingText.text = Phases();
+        TalkingText.text = Phrases();
         Invoke("stoptalking", 5.0f);
     }
 
     public void disable(){
-        TalkingText.text = Phases();
+        TalkingText.text = Phrases();
         Invoke("stoptalking", 5.0f);
     }
 
@@ -65,7 +65,7 @@ public class TalkingScript : MonoBehaviour, Interactable
         selection = choice;
     }
 
-    public string Phases(){
+    public string Phrases(){
         Debug.Log("Running");
         if(charactertype == "receptionist"){
             switch(selection){
