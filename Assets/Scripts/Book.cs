@@ -12,9 +12,15 @@ public class Book : MonoBehaviour, Interactable
     // Start is called before the first frame update
     public void enable(){
         BookText.text = Entry;
+        Invoke("stopReading", 3.0f);
     }
 
     public void disable(){
+        BookText.text = Entry;
+        Invoke("stopReading", 3.0f);
+    }
+
+    public void stopReading(){
         BookText.text = "";
     }
 }
