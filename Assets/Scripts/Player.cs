@@ -89,7 +89,7 @@ public class Player : MonoBehaviour
 
                 keyCodeIndex = 0;
             }
-        } else if (Input.anyKeyDown) {
+        } else if (Input.anyKeyDown && !Input.GetKeyDown(KeyCode.E)) {
             Debug.Log("Wrong Key Press... Start over");
             keyCodeIndex = 0;
             toggleInteractUI.checkVenPass = false;

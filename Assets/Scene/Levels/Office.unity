@@ -1799,34 +1799,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 245233138}
   m_CullTransparentMesh: 1
---- !u!1 &257442361 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 649272280082314689, guid: 10476f533a5088d489353d4fa2a07dc0, type: 3}
-  m_PrefabInstance: {fileID: 1734643435}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &257442369
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 257442361}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2e7c034437afac44a8b9867411c85459, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _UI:
-  - {fileID: 1118783246}
-  - {fileID: 1837712011}
-  - {fileID: 927885044}
-  - {fileID: 863710968}
-  - {fileID: 571051649}
-  - {fileID: 137698495}
-  - {fileID: 2071041418}
-  - {fileID: 1682055497}
-  interactUI: {fileID: 1760679045}
-  iField: {fileID: 799599458}
 --- !u!1 &259327937
 GameObject:
   m_ObjectHideFlags: 0
@@ -11004,6 +10976,46 @@ PrefabInstance:
       propertyPath: m_TagString
       value: Player
       objectReference: {fileID: 0}
+    - target: {fileID: 1963441869945463313, guid: 10476f533a5088d489353d4fa2a07dc0, type: 3}
+      propertyPath: iField
+      value: 
+      objectReference: {fileID: 799599458}
+    - target: {fileID: 1963441869945463313, guid: 10476f533a5088d489353d4fa2a07dc0, type: 3}
+      propertyPath: interactUI
+      value: 
+      objectReference: {fileID: 1760679045}
+    - target: {fileID: 1963441869945463313, guid: 10476f533a5088d489353d4fa2a07dc0, type: 3}
+      propertyPath: _UI.Array.data[0]
+      value: 
+      objectReference: {fileID: 1118783246}
+    - target: {fileID: 1963441869945463313, guid: 10476f533a5088d489353d4fa2a07dc0, type: 3}
+      propertyPath: _UI.Array.data[1]
+      value: 
+      objectReference: {fileID: 1837712011}
+    - target: {fileID: 1963441869945463313, guid: 10476f533a5088d489353d4fa2a07dc0, type: 3}
+      propertyPath: _UI.Array.data[2]
+      value: 
+      objectReference: {fileID: 927885044}
+    - target: {fileID: 1963441869945463313, guid: 10476f533a5088d489353d4fa2a07dc0, type: 3}
+      propertyPath: _UI.Array.data[3]
+      value: 
+      objectReference: {fileID: 863710968}
+    - target: {fileID: 1963441869945463313, guid: 10476f533a5088d489353d4fa2a07dc0, type: 3}
+      propertyPath: _UI.Array.data[4]
+      value: 
+      objectReference: {fileID: 571051649}
+    - target: {fileID: 1963441869945463313, guid: 10476f533a5088d489353d4fa2a07dc0, type: 3}
+      propertyPath: _UI.Array.data[5]
+      value: 
+      objectReference: {fileID: 137698495}
+    - target: {fileID: 1963441869945463313, guid: 10476f533a5088d489353d4fa2a07dc0, type: 3}
+      propertyPath: _UI.Array.data[6]
+      value: 
+      objectReference: {fileID: 2071041418}
+    - target: {fileID: 1963441869945463313, guid: 10476f533a5088d489353d4fa2a07dc0, type: 3}
+      propertyPath: _UI.Array.data[7]
+      value: 
+      objectReference: {fileID: 1682055497}
     - target: {fileID: 2731268934063628191, guid: 10476f533a5088d489353d4fa2a07dc0, type: 3}
       propertyPath: OnSeriesComplete.m_PersistentCalls.m_Calls.Array.size
       value: 0

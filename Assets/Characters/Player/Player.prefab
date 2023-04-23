@@ -15,6 +15,7 @@ GameObject:
   - component: {fileID: 2731268934063628191}
   - component: {fileID: 6092330707839335431}
   - component: {fileID: 593751311369683379}
+  - component: {fileID: 1963441869945463313}
   m_Layer: 3
   m_Name: Capsule
   m_TagString: Player
@@ -155,6 +156,8 @@ MonoBehaviour:
   groundLayer:
     serializedVersion: 2
     m_Bits: 64
+  KeyCodeSeriesVending: 11010000140100001101000011010000
+  DelayBeforeReset: 86400
 --- !u!114 &6092330707839335431
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -182,6 +185,29 @@ MonoBehaviour:
   spriteRenderer: {fileID: 7535775800428690052}
   blinkingSprite: {fileID: 21300000, guid: 49002b45b4e11a845b89448eccb93d9f, type: 3}
   originalSprite: {fileID: 21300000, guid: dd4e11c8b72f3f44197c58cce4c5ae4b, type: 3}
+--- !u!114 &1963441869945463313
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 649272280082314689}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2e7c034437afac44a8b9867411c85459, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _UI:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  interactUI: {fileID: 0}
+  iField: {fileID: 0}
 --- !u!1 &4496846922237516054
 GameObject:
   m_ObjectHideFlags: 0
