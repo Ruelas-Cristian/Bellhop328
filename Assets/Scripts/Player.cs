@@ -1,27 +1,30 @@
 using System.Collections;
 using System.Collections.Generic;
+using UnityEditor.Experimental.GraphView;
 using UnityEngine;
 
 public class Player : MonoBehaviour
 {
+    [Header("Character Physics")]
+    [SerializeField] private Rigidbody2D rb;
+    [SerializeField] private Transform groundCheck;
+    [SerializeField] private LayerMask groundLayer;
+
+    [Header("KeyCode - for key input puzzle")]
+    [SerializeField] KeyCode[] KeyCodeSeriesVending = new KeyCode[] { KeyCode.UpArrow, KeyCode.LeftArrow, KeyCode.UpArrow, KeyCode.UpArrow };
+    [SerializeField] float DelayBeforeReset = 86400;
+    private int keyCodeIndex = 0;
+    private float lastKeyPressTime;
+
+    static public bool canMove = true;
     private float horizontal;
     private float speed = 8f;
     //private float jumpingPower = 16f;
     private bool isFacingRight = true;
-
-    [SerializeField] private Rigidbody2D rb;
-    [SerializeField] private Transform groundCheck;
-    [SerializeField] private LayerMask groundLayer;
-    // Start is called before the first frame 
-
     private bool interactableEnabled = false;
     private GameObject itemObject;
-    private bool canMove = true;
-    void Start()
-    {
-        Drawer_Script.draUITest = false;
-    }
 
+   
     // Update is called once per frame
     void Update()
     {
@@ -55,22 +58,45 @@ public class Player : MonoBehaviour
             interactableEnabled = !interactableEnabled;
         }
 
-        //Dresser interaction
-        if (Input.GetKeyDown(KeyCode.E)) {
-            if (Drawer_Script._playerOver && !Drawer_Script.draUITest) {
-                canMove = false;
-                Drawer_Script.draUITest = true;
-            } else if (Drawer_Script._playerOver && Drawer_Script.draUITest) {
-                canMove = true;
-                Drawer_Script.draUITest = false;
-            }
-        }
-    }
 
+    }
     private void FixedUpdate()
     {
-        rb.velocity = new Vector2(horizontal * speed, rb.velocity.y );
+        rb.velocity = new Vector2(horizontal * speed, rb.velocity.y);
+
+        if (toggleInteractUI.VenkeyCheck)
+            KeyCodeCheck();
     }
+
+    private void KeyCodeCheck() {
+        //if the KeyCode is empty it will return
+        if (KeyCodeSeriesVending.Length == 0)
+            return;
+
+        if( Time.time - lastKeyPressTime > DelayBeforeReset) {
+            Debug.Log("Ran out of time");
+            keyCodeIndex = 0;
+            toggleInteractUI.checkVenPass = false;
+        }
+
+        if (Input.GetKey(KeyCodeSeriesVending[keyCodeIndex])) {
+            lastKeyPressTime = Time.time;
+            keyCodeIndex++;
+
+            if(keyCodeIndex >= KeyCodeSeriesVending.Length) {
+                Debug.Log("Correct Key");
+                toggleInteractUI.checkVenPass = true;
+
+                keyCodeIndex = 0;
+            }
+        } else if (Input.anyKeyDown) {
+            Debug.Log("Wrong Key Press... Start over");
+            keyCodeIndex = 0;
+            toggleInteractUI.checkVenPass = false;
+        }
+
+    }
+
 
     private bool IsGrounded()
     {
