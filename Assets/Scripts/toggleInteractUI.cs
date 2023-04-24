@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class toggleInteractUI : MonoBehaviour {
     [Header("UI Elements")]
@@ -21,58 +22,85 @@ public class toggleInteractUI : MonoBehaviour {
     private bool draUITest = false;
     private bool clockCheck = false;
 
-    void Start() {
-        for (int i = 0; i < _UI.Length; i++)
-            _UI[i].SetActive(false);
+    private bool sceneCheck;
 
-        interactUI.SetActive(false);
+    void Start() {
+        Scene currentScene = SceneManager.GetActiveScene();
+        string sceneName = currentScene.name;
+
+        if (sceneName == "Office") sceneCheck = true;
+        else sceneCheck = false;
+
+        if (sceneCheck) {
+            for (int i = 0; i < _UI.Length; i++)
+                _UI[i].SetActive(false);
+
+            interactUI.SetActive(false);
+        }
     }
 
     void Update() {
-        _password = iField.text;
+        if (sceneCheck) {
+            _password = iField.text;
 
-        if (_password == "doom" || _password == "Doom" || _password == "DOOM")
-            checkInput = true;
-        else
-            checkInput = false;
+            if (_password == "doom" || _password == "Doom" || _password == "DOOM")
+                checkInput = true;
+            else
+                checkInput = false;
 
-        //interaction
-        if (Input.GetKeyDown(KeyCode.E)) {
-            if (_playerOver && !draUITest) {
-                Player.canMove = false;
-                draUITest = true;
-            } else if (_playerOver && draUITest) {
-                Player.canMove = true;
-                draUITest = false;
+            //interaction
+            if (Input.GetKeyDown(KeyCode.E))
+            {
+                if (_playerOver && !draUITest)
+                {
+                    Player.canMove = false;
+                    draUITest = true;
+                }
+                else if (_playerOver && draUITest)
+                {
+                    Player.canMove = true;
+                    draUITest = false;
+                }
             }
         }
     }
-    void FixedUpdate() { 
-        //This will test if the player is over the object
-        //and if the player pressed 'E' while over this object
-        if (_playerOver && draUITest) {
-            if (_otherColider.CompareTag("Drawer"))
-                _UI[0].SetActive(true);                 //Turn on the Drawer UI object
-            else if (_otherColider.CompareTag("Board"))
-                _UI[1].SetActive(true);                 //Turn on the Notice Board UI object
-            else if (_otherColider.CompareTag("FileCabinet")) {
-                _UI[2].SetActive(true);
-                if (checkInput)
-                    _UI[3].SetActive(true);
-            } else if (_otherColider.CompareTag("Vending")) {
-                _UI[4].SetActive(true);
-                _UI[5].SetActive(false);
-                VenkeyCheck = true;
-                if (checkVenPass)
-                    _UI[5].SetActive(true);
-            } else if (_otherColider.CompareTag("DeskDrawer") && checkVenPass) {
-                _UI[6].SetActive(true);
-                clockCheck = true;
-            } else if (_otherColider.CompareTag("Clock") && clockCheck)
-                _UI[7].SetActive(true);
-        } else if (_playerOver && !draUITest) {
-            for (int i = 0; i < _UI.Length; i++) 
-                _UI[i].SetActive(false);
+    void FixedUpdate() {
+        if (sceneCheck) {
+            //This will test if the player is over the object
+            //and if the player pressed 'E' while over this object
+            if (_playerOver && draUITest)
+            {
+                if (_otherColider.CompareTag("Drawer"))
+                    _UI[0].SetActive(true);                 //Turn on the Drawer UI object
+                else if (_otherColider.CompareTag("Board"))
+                    _UI[1].SetActive(true);                 //Turn on the Notice Board UI object
+                else if (_otherColider.CompareTag("FileCabinet"))
+                {
+                    _UI[2].SetActive(true);
+                    if (checkInput)
+                        _UI[3].SetActive(true);
+                }
+                else if (_otherColider.CompareTag("Vending"))
+                {
+                    _UI[4].SetActive(true);
+                    _UI[5].SetActive(false);
+                    VenkeyCheck = true;
+                    if (checkVenPass)
+                        _UI[5].SetActive(true);
+                }
+                else if (_otherColider.CompareTag("DeskDrawer") && checkVenPass)
+                {
+                    _UI[6].SetActive(true);
+                    clockCheck = true;
+                }
+                else if (_otherColider.CompareTag("Clock") && clockCheck)
+                    _UI[7].SetActive(true);
+            }
+            else if (_playerOver && !draUITest)
+            {
+                for (int i = 0; i < _UI.Length; i++)
+                    _UI[i].SetActive(false);
+            }
         }
     }
 

@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 2731268934063628191}
   - component: {fileID: 6092330707839335431}
   - component: {fileID: 593751311369683379}
-  - component: {fileID: 1963441869945463313}
+  - component: {fileID: 5330802580225472863}
   m_Layer: 3
   m_Name: Capsule
   m_TagString: Player
@@ -185,7 +185,7 @@ MonoBehaviour:
   spriteRenderer: {fileID: 7535775800428690052}
   blinkingSprite: {fileID: 21300000, guid: 49002b45b4e11a845b89448eccb93d9f, type: 3}
   originalSprite: {fileID: 21300000, guid: dd4e11c8b72f3f44197c58cce4c5ae4b, type: 3}
---- !u!114 &1963441869945463313
+--- !u!114 &5330802580225472863
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -194,18 +194,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 649272280082314689}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2e7c034437afac44a8b9867411c85459, type: 3}
+  m_Script: {fileID: 11500000, guid: 864997c54888f694881cf147507ef12d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _UI:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  _UI: []
   interactUI: {fileID: 0}
   iField: {fileID: 0}
 --- !u!1 &4496846922237516054

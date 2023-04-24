@@ -1068,6 +1068,7 @@ GameObject:
   m_Component:
   - component: {fileID: 210239721}
   - component: {fileID: 210239722}
+  - component: {fileID: 210239723}
   m_Layer: 0
   m_Name: Base
   m_TagString: Clock
@@ -1142,6 +1143,32 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!61 &210239723
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 210239720}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1.12, y: 4.26}
+    newSize: {x: 1, y: 1}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1.12, y: 4.26}
+  m_EdgeRadius: 0
 --- !u!1 &228304102
 GameObject:
   m_ObjectHideFlags: 0
@@ -4027,7 +4054,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8361071305285616391, guid: 63352c459bbb05048af4d7b8ca32984c, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -269.58
+      value: -270.7
       objectReference: {fileID: 0}
     - target: {fileID: 8361071305285616391, guid: 63352c459bbb05048af4d7b8ca32984c, type: 3}
       propertyPath: m_LocalPosition.y
@@ -6607,18 +6634,32 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &1314789543
-MonoBehaviour:
+--- !u!61 &1314789543
+BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1314789539}
   m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 049fc28384859a741a7a4cd18c840c9b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 7.42, y: 11.98}
+    newSize: {x: 1, y: 1}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 7.42, y: 11.98}
+  m_EdgeRadius: 0
 --- !u!1 &1332271632
 GameObject:
   m_ObjectHideFlags: 0
@@ -9079,46 +9120,6 @@ PrefabInstance:
       propertyPath: m_TagString
       value: Player
       objectReference: {fileID: 0}
-    - target: {fileID: 1963441869945463313, guid: 10476f533a5088d489353d4fa2a07dc0, type: 3}
-      propertyPath: iField
-      value: 
-      objectReference: {fileID: 799599458}
-    - target: {fileID: 1963441869945463313, guid: 10476f533a5088d489353d4fa2a07dc0, type: 3}
-      propertyPath: interactUI
-      value: 
-      objectReference: {fileID: 1760679045}
-    - target: {fileID: 1963441869945463313, guid: 10476f533a5088d489353d4fa2a07dc0, type: 3}
-      propertyPath: _UI.Array.data[0]
-      value: 
-      objectReference: {fileID: 1118783246}
-    - target: {fileID: 1963441869945463313, guid: 10476f533a5088d489353d4fa2a07dc0, type: 3}
-      propertyPath: _UI.Array.data[1]
-      value: 
-      objectReference: {fileID: 1837712011}
-    - target: {fileID: 1963441869945463313, guid: 10476f533a5088d489353d4fa2a07dc0, type: 3}
-      propertyPath: _UI.Array.data[2]
-      value: 
-      objectReference: {fileID: 927885044}
-    - target: {fileID: 1963441869945463313, guid: 10476f533a5088d489353d4fa2a07dc0, type: 3}
-      propertyPath: _UI.Array.data[3]
-      value: 
-      objectReference: {fileID: 863710968}
-    - target: {fileID: 1963441869945463313, guid: 10476f533a5088d489353d4fa2a07dc0, type: 3}
-      propertyPath: _UI.Array.data[4]
-      value: 
-      objectReference: {fileID: 571051649}
-    - target: {fileID: 1963441869945463313, guid: 10476f533a5088d489353d4fa2a07dc0, type: 3}
-      propertyPath: _UI.Array.data[5]
-      value: 
-      objectReference: {fileID: 137698495}
-    - target: {fileID: 1963441869945463313, guid: 10476f533a5088d489353d4fa2a07dc0, type: 3}
-      propertyPath: _UI.Array.data[6]
-      value: 
-      objectReference: {fileID: 2071041418}
-    - target: {fileID: 1963441869945463313, guid: 10476f533a5088d489353d4fa2a07dc0, type: 3}
-      propertyPath: _UI.Array.data[7]
-      value: 
-      objectReference: {fileID: 1682055497}
     - target: {fileID: 2731268934063628191, guid: 10476f533a5088d489353d4fa2a07dc0, type: 3}
       propertyPath: OnSeriesComplete.m_PersistentCalls.m_Calls.Array.size
       value: 0
@@ -9143,6 +9144,50 @@ PrefabInstance:
       propertyPath: m_TagString
       value: Player
       objectReference: {fileID: 0}
+    - target: {fileID: 5330802580225472863, guid: 10476f533a5088d489353d4fa2a07dc0, type: 3}
+      propertyPath: iField
+      value: 
+      objectReference: {fileID: 799599458}
+    - target: {fileID: 5330802580225472863, guid: 10476f533a5088d489353d4fa2a07dc0, type: 3}
+      propertyPath: interactUI
+      value: 
+      objectReference: {fileID: 1760679045}
+    - target: {fileID: 5330802580225472863, guid: 10476f533a5088d489353d4fa2a07dc0, type: 3}
+      propertyPath: _UI.Array.size
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 5330802580225472863, guid: 10476f533a5088d489353d4fa2a07dc0, type: 3}
+      propertyPath: _UI.Array.data[0]
+      value: 
+      objectReference: {fileID: 1118783246}
+    - target: {fileID: 5330802580225472863, guid: 10476f533a5088d489353d4fa2a07dc0, type: 3}
+      propertyPath: _UI.Array.data[1]
+      value: 
+      objectReference: {fileID: 1837712011}
+    - target: {fileID: 5330802580225472863, guid: 10476f533a5088d489353d4fa2a07dc0, type: 3}
+      propertyPath: _UI.Array.data[2]
+      value: 
+      objectReference: {fileID: 927885044}
+    - target: {fileID: 5330802580225472863, guid: 10476f533a5088d489353d4fa2a07dc0, type: 3}
+      propertyPath: _UI.Array.data[3]
+      value: 
+      objectReference: {fileID: 863710968}
+    - target: {fileID: 5330802580225472863, guid: 10476f533a5088d489353d4fa2a07dc0, type: 3}
+      propertyPath: _UI.Array.data[4]
+      value: 
+      objectReference: {fileID: 571051649}
+    - target: {fileID: 5330802580225472863, guid: 10476f533a5088d489353d4fa2a07dc0, type: 3}
+      propertyPath: _UI.Array.data[5]
+      value: 
+      objectReference: {fileID: 137698495}
+    - target: {fileID: 5330802580225472863, guid: 10476f533a5088d489353d4fa2a07dc0, type: 3}
+      propertyPath: _UI.Array.data[6]
+      value: 
+      objectReference: {fileID: 2071041418}
+    - target: {fileID: 5330802580225472863, guid: 10476f533a5088d489353d4fa2a07dc0, type: 3}
+      propertyPath: _UI.Array.data[7]
+      value: 
+      objectReference: {fileID: 1682055497}
     - target: {fileID: 5510846597276603027, guid: 10476f533a5088d489353d4fa2a07dc0, type: 3}
       propertyPath: m_Size.x
       value: 30.45438
@@ -11386,7 +11431,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2095802581}
-  - component: {fileID: 2095802580}
   - component: {fileID: 2095802579}
   m_Layer: 0
   m_Name: interactableFileCabinet(1)
@@ -11421,20 +11465,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
---- !u!114 &2095802580
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2095802578}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2e7c034437afac44a8b9867411c85459, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  dresserUI: {fileID: 0}
-  interactUI: {fileID: 1760679045}
 --- !u!4 &2095802581
 Transform:
   m_ObjectHideFlags: 0

@@ -1,6 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
-using UnityEditor.Experimental.GraphView;
+//using UnityEditor.Experimental.GraphView;
 using UnityEngine;
 
 public class Player : MonoBehaviour
@@ -24,15 +24,13 @@ public class Player : MonoBehaviour
     private bool interactableEnabled = false;
     private GameObject itemObject;
 
-   
     // Update is called once per frame
-    void Update()
-    {
-        if (canMove)
+    void Update() {
+        if (canMove) {
             horizontal = Input.GetAxis("Horizontal");
-        else
-            horizontal = 0f;    //turns hoizontal movement to zero so player doesn't float away
-
+        } else {
+            horizontal = 0;    //turns hoizontal movement to zero so player doesn't float away
+        }
         //Commented out code below is for jumping
         /*if(Input.GetButtonDown("Jump") && IsGrounded()){
             rb.velocity = new Vector2(rb.velocity.x, jumpingPower);
@@ -89,7 +87,7 @@ public class Player : MonoBehaviour
 
                 keyCodeIndex = 0;
             }
-        } else if (Input.anyKeyDown && !Input.GetKeyDown(KeyCode.E)) {
+        } else if (Input.anyKeyDown && !Input.GetKeyDown(KeyCode.E) && !Input.GetKeyDown(KeyCode.A) && !Input.GetKeyDown(KeyCode.D)) {
             Debug.Log("Wrong Key Press... Start over");
             keyCodeIndex = 0;
             toggleInteractUI.checkVenPass = false;
