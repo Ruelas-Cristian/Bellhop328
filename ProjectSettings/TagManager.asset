@@ -12,6 +12,10 @@ TagManager:
   - Vending
   - DeskDrawer
   - FileCabinet
+  - Dresser
+  - LeveR
+  - Bottom
+  - Top
   layers:
   - Default
   - TransparentFX
