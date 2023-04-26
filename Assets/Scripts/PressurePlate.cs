@@ -6,7 +6,7 @@ public class PressurePlate : MonoBehaviour
 {
     public GameObject platfrom;
     public GameObject platfromLight;
-    public GameObject FloorBlocker;
+    public GameObject objectoftypesafe;
     private bool moveBack = false;
     private bool UpBlock = false;
     private bool DownBlock = false;
@@ -40,6 +40,12 @@ public class PressurePlate : MonoBehaviour
 
     private void OnCollisionStay2D(Collision2D collision){
         if(collision.transform.GetComponent<Draggable>() && !collision.transform.CompareTag("LeveR") && !UpBlock){
+            if(!moveBack){
+                if(objectoftypesafe.GetComponent<Safe>()){
+                    objectoftypesafe.GetComponent<Safe>().Do();
+                }
+            }
+            moveBack = true;
             platfrom.transform.Translate(0, -0.01f, 0);
         } else if(collision.transform.CompareTag("LeveR") && !DownBlock){
             platfrom.transform.Translate(0, 0.01f, 0);

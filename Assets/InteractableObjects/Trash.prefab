@@ -13,9 +13,9 @@ GameObject:
   - component: {fileID: 3824054943732007302}
   - component: {fileID: 8319832518068865936}
   - component: {fileID: 5218139290321767034}
-  m_Layer: 7
-  m_Name: Ink
-  m_TagString: Ink
+  m_Layer: 8
+  m_Name: Trash
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -29,7 +29,7 @@ RectTransform:
   m_GameObject: {fileID: 549878419475350945}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.01702228, y: 0.01702228, z: 0}
+  m_LocalScale: {x: 0.031632554, y: 0.031632554, z: 0}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 5366704170207646652}
@@ -81,8 +81,8 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 4
-  m_Sprite: {fileID: 21300000, guid: 9a810fee7f5a5534aab445c4b2816c3c, type: 3}
+  m_SortingOrder: 5
+  m_Sprite: {fileID: 21300000, guid: 9a47ac8066e1acd4991a4d7ec9df10cc, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -106,7 +106,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.87799597, y: 14.523395}
+  m_Offset: {x: -5.2100163, y: 5.1302853}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -117,7 +117,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 14.762389, y: 19.55456}
+  m_Size: {x: 5.4900064, y: 4.4648705}
   m_EdgeRadius: 0
 --- !u!114 &8319832518068865936
 MonoBehaviour:
@@ -161,7 +161,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5366704170207646652}
-  m_Layer: 7
+  m_Layer: 8
   m_Name: GroundChecker
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -192,8 +192,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8297843877808038733}
-  m_Layer: 0
-  m_Name: Ink
+  m_Layer: 8
+  m_Name: Trash
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

@@ -8,7 +8,10 @@ public class Printer : MonoBehaviour, Interactable
 {
     [SerializeField] TextMeshProUGUI TalkingText;
     public Sprite paper;
+    public Sprite printer1;
+    public Sprite printer2;
     public GameObject viewport;
+    public GameObject led;
     private bool printed = false;
     private bool haspaper = false;
     private bool hasink = false;
@@ -17,6 +20,7 @@ public class Printer : MonoBehaviour, Interactable
     void Start()
     {
         viewport.SetActive(false);
+        led.SetActive(true);
     }
 
     public void enable(){
@@ -27,6 +31,7 @@ public class Printer : MonoBehaviour, Interactable
             TalkingText.text = "";
             viewport.GetComponent<Image>().sprite = paper;
             viewport.SetActive(true);
+            Invoke("DisableImage", 2.0f);
         } else {
             viewport.SetActive(false);
             active = false;
@@ -41,6 +46,7 @@ public class Printer : MonoBehaviour, Interactable
             TalkingText.text = "";
             viewport.GetComponent<Image>().sprite = paper;
             viewport.SetActive(true);
+            Invoke("DisableImage", 2.0f);
         } else {
             viewport.SetActive(false);
             active = false;
@@ -50,6 +56,7 @@ public class Printer : MonoBehaviour, Interactable
     private void checkForPaper(){
         if(hasink && haspaper){
             TalkingText.text = "Printing";
+            led.GetComponent<SpriteRenderer>().color = Color.yellow;
             Invoke("print", 3.0f);
         } else if(haspaper){
             TalkingText.text = "No Ink!";
@@ -64,8 +71,10 @@ public class Printer : MonoBehaviour, Interactable
     }
 
     private void print(){
+        led.GetComponent<SpriteRenderer>().color = Color.green;
         TalkingText.text = "Printing complete Press E To View";
         printed = true;
+        this.GetComponent<SpriteRenderer>().sprite = printer2;
         Invoke("stopPrinting", 2.0f);
     }
 
@@ -73,7 +82,9 @@ public class Printer : MonoBehaviour, Interactable
         if(other.GetComponent<Draggable>() && other.CompareTag("Paper")){
             haspaper = true;
             Destroy(other.gameObject);
+            this.GetComponent<SpriteRenderer>().sprite = printer1;
         } else if(other.GetComponent<Draggable>() && other.CompareTag("Ink")){
+            led.GetComponent<SpriteRenderer>().color = Color.blue;
             hasink = true;
             Destroy(other.gameObject);
         }
@@ -82,6 +93,10 @@ public class Printer : MonoBehaviour, Interactable
     public void stopPrinting(){
         TalkingText.text = "";
         
+    }
+
+    private void DisableImage(){
+        viewport.SetActive(false);
     }
 
 

@@ -16,6 +16,8 @@ TagManager:
   - LeveR
   - Bottom
   - Top
+  - Paper
+  - Ink
   layers:
   - Default
   - TransparentFX
@@ -24,9 +26,9 @@ TagManager:
   - Water
   - UI
   - Ground
-  - 
-  - 
-  - 
+  - Passable
+  - Cover
+  - ObjectCollisions
   - 
   - 
   - 

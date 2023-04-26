@@ -45,5 +45,6 @@ public class PodiumSpeaker : MonoBehaviour, Interactable, ActionClasser
     private void StopthePlaying(){
         TalkingText.text = "";
     }
+    
 
 }
