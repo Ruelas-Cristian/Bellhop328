@@ -11,10 +11,12 @@ GameObject:
   - component: {fileID: 8570233198128262393}
   - component: {fileID: 4857052974490170482}
   - component: {fileID: 3824054943732007302}
-  - component: {fileID: 1683106241953175583}
-  m_Layer: 0
-  m_Name: Lugguage-01
-  m_TagString: Interactable
+  - component: {fileID: 8319832518068865936}
+  - component: {fileID: 5218139290321767034}
+  - component: {fileID: 6446964334072857155}
+  m_Layer: 7
+  m_Name: Ink
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -28,7 +30,7 @@ RectTransform:
   m_GameObject: {fileID: 549878419475350945}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.049530253, y: 0.049530253, z: 0}
+  m_LocalScale: {x: 0.014944277, y: 0.014944277, z: 0}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 5366704170207646652}
@@ -37,7 +39,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 1.02, y: -0.766}
+  m_AnchoredPosition: {x: 0, y: 4.657097e-10}
   m_SizeDelta: {x: 18, y: 18}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!212 &4857052974490170482
@@ -78,10 +80,10 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: -1371264157
-  m_SortingLayer: 1
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
   m_SortingOrder: 4
-  m_Sprite: {fileID: 21300000, guid: f7672dce6fc23bb4e8288ad700946dde, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 98ac3a9568e7090438c765e8ec77d68d, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -102,10 +104,10 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -20.34086, y: 9.909037}
+  m_Offset: {x: -0.047533035, y: 11.890814}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -116,9 +118,9 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 37.313908, y: 24.011505}
+  m_Size: {x: 37.319927, y: 57.985943}
   m_EdgeRadius: 0
---- !u!114 &1683106241953175583
+--- !u!114 &8319832518068865936
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -127,13 +129,42 @@ MonoBehaviour:
   m_GameObject: {fileID: 549878419475350945}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 37d40ffec2d058c4895586a8300d0630, type: 3}
+  m_Script: {fileID: 11500000, guid: e5efa512fb9fb7e49be13d91d38283cc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  TalkingText: {fileID: 0}
-  viewport: {fileID: 0}
-  paper: {fileID: 21300000, guid: c3e31c40c065bce4e8bc950a977aa98d, type: 3}
-  opened: {fileID: 21300000, guid: cf373987c73e2394c803d17e6f25d544, type: 3}
+--- !u!50 &5218139290321767034
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 549878419475350945}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
+--- !u!114 &6446964334072857155
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 549878419475350945}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 77c10d43425083744a8b35b090296cb8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1757555171980732937
 GameObject:
   m_ObjectHideFlags: 0
@@ -143,7 +174,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5366704170207646652}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: GroundChecker
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -175,7 +206,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8297843877808038733}
   m_Layer: 0
-  m_Name: BriefCase
+  m_Name: MirrorPiece
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -189,7 +220,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7563766955336738562}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0.004, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:

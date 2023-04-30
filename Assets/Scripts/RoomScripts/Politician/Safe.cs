@@ -5,13 +5,14 @@ using UnityEngine;
 public class Safe : MonoBehaviour, Interactable, ActionClasser
 {
 
-    public GameObject self;
+    public GameObject mirror;
     public int num;
     public GameObject painting;
+    public Sprite safe;
 
     void Start()
     {
-        self.SetActive(false);
+        mirror.SetActive(false);
     }
 
     public void enable(){
@@ -27,7 +28,6 @@ public class Safe : MonoBehaviour, Interactable, ActionClasser
     }
 
     private void unhide(){
-        self.SetActive(true);
         painting.GetComponent<Rigidbody2D>().simulated = true;
     }
 
@@ -39,8 +39,9 @@ public class Safe : MonoBehaviour, Interactable, ActionClasser
         }
     }
 
-    private void open(){
-
+    public void open(){
+        this.GetComponent<SpriteRenderer>().sprite = safe;
+        mirror.SetActive(true);
     }
 
     void Update()

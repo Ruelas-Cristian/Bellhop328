@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 2403944856452246807}
   - component: {fileID: 7476502509083127654}
   m_Layer: 0
-  m_Name: Polaroid
+  m_Name: Polaroid 4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -71,7 +71,7 @@ GameObject:
   - component: {fileID: 2532741233428916595}
   - component: {fileID: 3375343632897798455}
   - component: {fileID: 4551937232233008854}
-  - component: {fileID: 8835874214504165277}
+  - component: {fileID: 7817354472346364962}
   m_Layer: 0
   m_Name: Square
   m_TagString: Interactable
@@ -135,7 +135,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 1
-  m_Sprite: {fileID: 21300000, guid: ad13a327179e893489605aa7395e0e2b, type: 3}
+  m_Sprite: {fileID: 21300000, guid: d7f47d863119ae14aabc2b03cee624f0, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -184,9 +184,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c0914f272d6f18b4fb1752f43b9a7b1e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  picture: {fileID: 21300000, guid: ad13a327179e893489605aa7395e0e2b, type: 3}
+  picture: {fileID: 21300000, guid: d7f47d863119ae14aabc2b03cee624f0, type: 3}
   viewport: {fileID: 0}
---- !u!114 &8835874214504165277
+--- !u!114 &7817354472346364962
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}

@@ -11,12 +11,15 @@ public class BriefCase : MonoBehaviour, Interactable
     private bool open = false;
     private GameObject itemObject;
     public GameObject viewport;
+    public GameObject book;
     public Sprite paper;
     public Sprite opened;
 
     void Start()
     {
-        
+        viewport.SetActive(false);
+        book.GetComponent<Rigidbody2D>().simulated= false;
+        //book.SetActive(false);
     }
 
     void Update()
@@ -25,26 +28,22 @@ public class BriefCase : MonoBehaviour, Interactable
     }
 
     public void enable(){
-        if(key && !open){
+        if(key){
             viewport.GetComponent<Image>().sprite = paper;
             viewport.SetActive(true);
             Invoke("stop", 5.0f);
             open = true;
-        } else if(open){
-            stop();
-            open = false;
+            book.GetComponent<Rigidbody2D>().simulated = true;
+            //book.SetActive(true);
         }
     }
 
     public void disable(){
-        if(key && !open){
+        if(key){
             viewport.GetComponent<Image>().sprite = paper;
             viewport.SetActive(true);
             Invoke("stop", 5.0f);
             open = true;
-        } else if(open){
-            stop();
-            open = false;
         }
     }
 
