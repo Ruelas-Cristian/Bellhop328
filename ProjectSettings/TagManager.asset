@@ -18,6 +18,8 @@ TagManager:
   - Top
   - Paper
   - Ink
+  - Tie
+  - Key
   layers:
   - Default
   - TransparentFX
@@ -29,8 +31,8 @@ TagManager:
   - Passable
   - Cover
   - ObjectCollisions
-  - 
-  - 
+  - Tieholder
+  - Tie
   - 
   - 
   - 
