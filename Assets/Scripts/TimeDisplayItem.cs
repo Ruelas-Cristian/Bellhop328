@@ -1,8 +1,11 @@
-﻿using TMPro;
+﻿using System;
+using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 
-public class TimeDisplayItem : MonoBehaviour
+public class TimeDisplayItem1 : MonoBehaviour
 {
+    /*
     [Tooltip("A reference to the TextMeshProUGUI to display the time.")]
     [SerializeField]
     protected TextMeshProUGUI display;
@@ -27,5 +30,6 @@ public class TimeDisplayItem : MonoBehaviour
     {
         title.text = text;
     }
+    */
 
 }

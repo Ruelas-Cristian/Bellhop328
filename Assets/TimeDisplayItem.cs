@@ -3,6 +3,7 @@ using UnityEngine;
 
 public class TimeDisplayItem : MonoBehaviour
 {
+    /*
     [Tooltip("A reference to the TextMeshProUGUI to display the time.")]
     [SerializeField]
     protected TextMeshProUGUI display;
@@ -27,5 +28,6 @@ public class TimeDisplayItem : MonoBehaviour
     {
         title.text = text;
     }
+    */
 
 }

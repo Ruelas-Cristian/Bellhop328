@@ -18,13 +18,13 @@ public class BookMove : MonoBehaviour, Interactable
     public void enable(){
         viewport.SetActive(true);
         viewport.GetComponent<Image>().sprite = picture;
-        Invoke("stop", 5.0f);
+        Invoke("stop", 2.0f);
     }
 
     public void disable(){
         viewport.SetActive(true);
         viewport.GetComponent<Image>().sprite = picture;
-        Invoke("stop", 5.0f);
+        Invoke("stop", 2.0f);
     }
 
     // Update is called once per frame

@@ -4,7 +4,7 @@ using UnityEngine;
 
     public class TimeDisplay : MonoBehaviour
     {
-        
+        /*
         [Tooltip("Pool object for the time display UI item.")]
         public ObjectDef timeDisplayItem;
 
@@ -57,4 +57,5 @@ using UnityEngine;
             if (fraction > 99) fraction = 99;
             return string.Format("{0}:{1:00}:{2:00}", minutes, seconds, fraction);
         }
+        */
     }

@@ -6,7 +6,7 @@ namespace KartGame.Track
 {
     public class TimeDisplay : MonoBehaviour
     {
-        
+        /*
         [Tooltip("Pool object for the time display UI item.")]
         public ObjectDef timeDisplayItem;
 
@@ -59,6 +59,6 @@ namespace KartGame.Track
             float fraction = (time * 100) % 100;
             if (fraction > 99) fraction = 99;
             return string.Format("{0}:{1:00}:{2:00}", minutes, seconds, fraction);
-        }
+        }*/
     }
 }

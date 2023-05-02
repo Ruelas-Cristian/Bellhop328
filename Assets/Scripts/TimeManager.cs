@@ -1,10 +1,11 @@
-﻿﻿using System;
+﻿﻿/*using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
 public class TimeManager : MonoBehaviour
 { 
+    /*
     public bool IsFinite { get; private set; }
     public float TotalTime { get; private set; }
     public float TimeRemaining { get; private set; }
@@ -46,5 +47,6 @@ public class TimeManager : MonoBehaviour
     {
 
     }
-}
+    
+}*/
 
