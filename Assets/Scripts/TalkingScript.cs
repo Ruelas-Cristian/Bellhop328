@@ -90,7 +90,7 @@ public class TalkingScript : MonoBehaviour, Interactable
             case 0:
                 return "";
             case 1:
-                return "";
+                return "\"Hey donkey make me something to eat and I might give you the Key to the wine cabinet.\"";
             case 2:
                 return "";
             case 3:
@@ -98,7 +98,7 @@ public class TalkingScript : MonoBehaviour, Interactable
             case 4:
                 return "\"You call this linguine?! My grandmother could shit something more edible. Put this in the sink and make it again\"";
             case 5:
-                return "Not bad, I’d feed this to my dog.";
+                return "\"Not bad, I’d feed this to my dog.\"";
             default:
                 break;
         }
