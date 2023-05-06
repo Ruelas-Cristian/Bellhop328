@@ -20,6 +20,11 @@ TagManager:
   - Ink
   - Tie
   - Key
+  - Money
+  - Book
+  - Ingredent
+  - Wrong
+  - Pan
   layers:
   - Default
   - TransparentFX
@@ -33,7 +38,7 @@ TagManager:
   - ObjectCollisions
   - Tieholder
   - Tie
-  - 
+  - Ingredents
   - 
   - 
   - 

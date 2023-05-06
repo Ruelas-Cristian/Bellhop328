@@ -96,9 +96,9 @@ public class TalkingScript : MonoBehaviour, Interactable
             case 3:
                 return "";
             case 4:
-                return "";
+                return "\"You call this linguine?! My grandmother could shit something more edible. Put this in the sink and make it again\"";
             case 5:
-                return "";
+                return "Not bad, I’d feed this to my dog.";
             default:
                 break;
         }

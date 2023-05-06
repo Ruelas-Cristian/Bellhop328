@@ -53,4 +53,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scene/Levels/Boxer.unity
     guid: 34a5402922265664791a4baf945f3c41
+  - enabled: 1
+    path: Assets/Scene/Levels/Chef.unity
+    guid: b3a2bd9d4d851b548a47ede451ee0112
   m_configObjects: {}

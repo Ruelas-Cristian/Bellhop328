@@ -168,7 +168,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1556268208495725258, guid: 63352c459bbb05048af4d7b8ca32984c, type: 3}
       propertyPath: Level
-      value: Level 4
+      value: Chef
       objectReference: {fileID: 0}
     - target: {fileID: 3252299784852935109, guid: 63352c459bbb05048af4d7b8ca32984c, type: 3}
       propertyPath: m_Name
