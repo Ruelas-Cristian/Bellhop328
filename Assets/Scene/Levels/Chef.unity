@@ -799,6 +799,18 @@ PrefabInstance:
       propertyPath: TalkingText
       value: 
       objectReference: {fileID: 368099709}
+    - target: {fileID: 4857052974490170482, guid: 9c67b08570c264948bc791713a332340, type: 3}
+      propertyPath: m_Color.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4857052974490170482, guid: 9c67b08570c264948bc791713a332340, type: 3}
+      propertyPath: m_Color.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4857052974490170482, guid: 9c67b08570c264948bc791713a332340, type: 3}
+      propertyPath: m_Color.r
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7563766955336738562, guid: 9c67b08570c264948bc791713a332340, type: 3}
       propertyPath: m_Name
       value: Cabinet
@@ -2246,6 +2258,18 @@ PrefabInstance:
     - target: {fileID: 4756011530323454326, guid: d1602a612a82c984c8272f0841074eec, type: 3}
       propertyPath: m_AnchoredPosition.x
       value: 0.056
+      objectReference: {fileID: 0}
+    - target: {fileID: 4857052974490170482, guid: d1602a612a82c984c8272f0841074eec, type: 3}
+      propertyPath: m_Color.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4857052974490170482, guid: d1602a612a82c984c8272f0841074eec, type: 3}
+      propertyPath: m_Color.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4857052974490170482, guid: d1602a612a82c984c8272f0841074eec, type: 3}
+      propertyPath: m_Color.r
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5172656769822058178, guid: d1602a612a82c984c8272f0841074eec, type: 3}
       propertyPath: m_LocalScale.x
