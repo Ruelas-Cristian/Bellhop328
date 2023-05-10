@@ -62,4 +62,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scene/Levels/Journalist.unity
     guid: 5c817c23626498b40bd8a971ac5b4509
+  - enabled: 1
+    path: Assets/Scene/Opening.unity
+    guid: 107b460d27c9b6448bcf016b746b36af
   m_configObjects: {}
