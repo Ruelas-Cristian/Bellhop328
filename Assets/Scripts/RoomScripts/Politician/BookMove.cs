@@ -18,6 +18,9 @@ public class BookMove : MonoBehaviour, Interactable
     public void enable(){
         viewport.SetActive(true);
         viewport.GetComponent<Image>().sprite = picture;
+        if (this.GetComponent<NewsPaper>()){
+            this.GetComponent<NewsPaper>().set();
+        }
         Invoke("stop", 2.0f);
     }
 

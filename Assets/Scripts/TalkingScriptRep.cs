@@ -4,11 +4,11 @@ using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
 
-public class TalkingScript : MonoBehaviour, Interactable
+public class TalkingScriptRep : MonoBehaviour, Interactable
 {
     [SerializeField] TextMeshProUGUI TalkingText;
     public string charactertype;
-    public int selection = 0;
+    public float selection = 0;
 
     // Start is called before the first frame update
     public SpriteRenderer spriteRenderer;
@@ -16,8 +16,14 @@ public class TalkingScript : MonoBehaviour, Interactable
     public Sprite originalSprite;
     private bool randomer = false;
     private float nextTime;
+    [SerializeField]
+    private FloatSO talked;
+    [SerializeField]
+    private FloatSO unlocked;
+
     public void Start(){
         timer();
+        selection = talked.Value;
     }
 
     public void Update(){
@@ -48,6 +54,8 @@ public class TalkingScript : MonoBehaviour, Interactable
     }
 
     public void enable(){
+        selection = talked.Value;
+        Debug.Log(talked.Value);
         TalkingText.text = Phrases();
 
         Invoke("stoptalking", 5.0f);
@@ -71,9 +79,10 @@ public class TalkingScript : MonoBehaviour, Interactable
         if(charactertype == "receptionist"){
             switch(selection){
             case 0:
-                return "\"Hey! You got here just in time; A Guest reported a sound comeing from the Journalist's room on the executive floor\"";
+                return "\"Hey! You got here just in time; A Guest reported a sound coming from the Journalist's room on the executive floor, do you mind checking it out. But first you need to collect the key from the office.\"";
             case 1:
-                return "\"Hey! You got here just in time; A Guest reported a sound comeing from the Journalist's room on the executive floor, do you mind checking it out.\"";
+                unlocked.Value = 1;
+                return "\"I've heard that the Journalist has been shot, the police are on their way! Oh and here is you master key, please do be careful!\"";
             case 2:
                 return "";
             case 3:
