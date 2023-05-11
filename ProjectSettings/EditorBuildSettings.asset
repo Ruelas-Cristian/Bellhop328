@@ -68,4 +68,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scene/Levels/JournalistFinal.unity
     guid: b352c97cc8b43874f818cfd6677bce97
+  - enabled: 1
+    path: Assets/Scene/EndScene.unity
+    guid: aad337c2a49d8b7439b9f8a5f9dcde2e
   m_configObjects: {}
