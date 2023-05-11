@@ -11,11 +11,8 @@ GameObject:
   - component: {fileID: 8570233198128262393}
   - component: {fileID: 4857052974490170482}
   - component: {fileID: 3824054943732007302}
-  - component: {fileID: 8319832518068865936}
-  - component: {fileID: 5218139290321767034}
-  - component: {fileID: 6446964334072857155}
   - component: {fileID: 1447021942253488761}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: Ink
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -105,7 +102,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: -0.047533035, y: 11.890814}
@@ -121,51 +118,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 37.319927, y: 57.985943}
   m_EdgeRadius: 0
---- !u!114 &8319832518068865936
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 549878419475350945}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e5efa512fb9fb7e49be13d91d38283cc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!50 &5218139290321767034
-Rigidbody2D:
-  serializedVersion: 4
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 549878419475350945}
-  m_BodyType: 0
-  m_Simulated: 1
-  m_UseFullKinematicContacts: 0
-  m_UseAutoMass: 0
-  m_Mass: 1
-  m_LinearDrag: 0
-  m_AngularDrag: 0.05
-  m_GravityScale: 1
-  m_Material: {fileID: 0}
-  m_Interpolate: 0
-  m_SleepingMode: 1
-  m_CollisionDetection: 0
-  m_Constraints: 0
---- !u!114 &6446964334072857155
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 549878419475350945}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 77c10d43425083744a8b35b090296cb8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &1447021942253488761
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -188,7 +140,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5366704170207646652}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: GroundChecker
   m_TagString: Untagged
   m_Icon: {fileID: 0}

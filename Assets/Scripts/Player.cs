@@ -23,6 +23,11 @@ public class Player : MonoBehaviour
     private bool isFacingRight = true;
     private bool interactableEnabled = false;
     private GameObject itemObject;
+    private bool walking = false;
+
+
+    [SerializeField]
+    private Walking walk;
 
     // Update is called once per frame
     void Update() {
@@ -30,6 +35,15 @@ public class Player : MonoBehaviour
             horizontal = Input.GetAxis("Horizontal");
         } else {
             horizontal = 0;    //turns hoizontal movement to zero so player doesn't float away
+        }
+        if(horizontal != 0){
+            if(!walking){
+                walk.walk();
+                walking = true;
+            }
+        } else {
+            walk.STOPwalking();
+            walking = false;
         }
         //Commented out code below is for jumping
         /*if(Input.GetButtonDown("Jump") && IsGrounded()){

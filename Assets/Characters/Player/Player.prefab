@@ -16,6 +16,7 @@ GameObject:
   - component: {fileID: 6092330707839335431}
   - component: {fileID: 593751311369683379}
   - component: {fileID: 5330802580225472863}
+  - component: {fileID: 7815359192266608008}
   m_Layer: 3
   m_Name: Capsule
   m_TagString: Player
@@ -158,6 +159,7 @@ MonoBehaviour:
     m_Bits: 64
   KeyCodeSeriesVending: 11010000140100001101000011010000
   DelayBeforeReset: 86400
+  walk: {fileID: 7815359192266608008}
 --- !u!114 &6092330707839335431
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -200,6 +202,21 @@ MonoBehaviour:
   _UI: []
   interactUI: {fileID: 0}
   iField: {fileID: 0}
+--- !u!114 &7815359192266608008
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 649272280082314689}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: af32b86886ffddd47a039099645369da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  oneSet: {fileID: 21300000, guid: cf04fd1f0fcf3a34fb4eab69281adca1, type: 3}
+  original: {fileID: 21300000, guid: dd4e11c8b72f3f44197c58cce4c5ae4b, type: 3}
+  twoOfSet: {fileID: 21300000, guid: 219e18b35e4c8494c9edf45fd510e309, type: 3}
 --- !u!1 &4496846922237516054
 GameObject:
   m_ObjectHideFlags: 0
