@@ -1304,7 +1304,7 @@ MonoBehaviour:
   clips:
   - {fileID: 8300000, guid: 5db9675ffeb932a4ab3660aa48ccd984, type: 3}
   durationIn: 0.5
-  targetVolumeIn: 0.5
+  targetVolumeIn: 0.1
 --- !u!82 &681914491
 AudioSource:
   m_ObjectHideFlags: 0
@@ -2327,6 +2327,10 @@ PrefabInstance:
     - target: {fileID: 1556268208495725258, guid: 63352c459bbb05048af4d7b8ca32984c, type: 3}
       propertyPath: Level
       value: Hallway level 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1556268208495725258, guid: 63352c459bbb05048af4d7b8ca32984c, type: 3}
+      propertyPath: doorType
+      value: Room
       objectReference: {fileID: 0}
     - target: {fileID: 1716133702635836172, guid: 63352c459bbb05048af4d7b8ca32984c, type: 3}
       propertyPath: m_LocalScale.x

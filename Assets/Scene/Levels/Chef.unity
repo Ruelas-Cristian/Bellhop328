@@ -1325,7 +1325,7 @@ MonoBehaviour:
   clips:
   - {fileID: 8300000, guid: da44f657c2687d24eb8fbb0f605d91cf, type: 3}
   durationIn: 0.5
-  targetVolumeIn: 0.5
+  targetVolumeIn: 0.1
 --- !u!82 &1032749096
 AudioSource:
   m_ObjectHideFlags: 0
@@ -2172,6 +2172,10 @@ PrefabInstance:
       propertyPath: Level
       value: Hallway level 3
       objectReference: {fileID: 0}
+    - target: {fileID: 1556268208495725258, guid: 63352c459bbb05048af4d7b8ca32984c, type: 3}
+      propertyPath: doorType
+      value: Room
+      objectReference: {fileID: 0}
     - target: {fileID: 1716133702635836172, guid: 63352c459bbb05048af4d7b8ca32984c, type: 3}
       propertyPath: m_LocalScale.x
       value: 0.16737176
@@ -2651,6 +2655,10 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: -0.242
       objectReference: {fileID: 0}
+    - target: {fileID: 1990622479183317053, guid: d1602a612a82c984c8272f0841074eec, type: 3}
+      propertyPath: m_Constraints
+      value: 4
+      objectReference: {fileID: 0}
     - target: {fileID: 2372640109052272906, guid: d1602a612a82c984c8272f0841074eec, type: 3}
       propertyPath: m_LocalScale.x
       value: 27.08512
@@ -2674,6 +2682,10 @@ PrefabInstance:
     - target: {fileID: 2676553522672283326, guid: d1602a612a82c984c8272f0841074eec, type: 3}
       propertyPath: m_AnchoredPosition.x
       value: -0.199
+      objectReference: {fileID: 0}
+    - target: {fileID: 3525160993584517725, guid: d1602a612a82c984c8272f0841074eec, type: 3}
+      propertyPath: m_Constraints
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 4756011530323454326, guid: d1602a612a82c984c8272f0841074eec, type: 3}
       propertyPath: m_AnchoredPosition.x
@@ -2718,6 +2730,10 @@ PrefabInstance:
     - target: {fileID: 5172656769822058178, guid: d1602a612a82c984c8272f0841074eec, type: 3}
       propertyPath: m_LocalPosition.y
       value: 13.14
+      objectReference: {fileID: 0}
+    - target: {fileID: 5210463124123579324, guid: d1602a612a82c984c8272f0841074eec, type: 3}
+      propertyPath: m_Constraints
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 7563766955336738562, guid: d1602a612a82c984c8272f0841074eec, type: 3}
       propertyPath: m_Name
@@ -2818,6 +2834,10 @@ PrefabInstance:
     - target: {fileID: 8634852352240720015, guid: d1602a612a82c984c8272f0841074eec, type: 3}
       propertyPath: m_LocalPosition.x
       value: -2.66
+      objectReference: {fileID: 0}
+    - target: {fileID: 8972759182097108981, guid: d1602a612a82c984c8272f0841074eec, type: 3}
+      propertyPath: m_Constraints
+      value: 4
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_AddedGameObjects: []
