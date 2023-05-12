@@ -82,7 +82,7 @@ public class TalkingScriptRep : MonoBehaviour, Interactable
                 return "\"Hey! You got here just in time; A Guest reported a sound coming from the Journalist's room on the executive floor, do you mind checking it out. But first you need to collect the key from the office.\"";
             case 1:
                 unlocked.Value = 1;
-                return "\"I've heard that the Journalist has been shot, the police are on their way! Oh and here is you master key, please do be careful!\"";
+                return "\"I've heard that the Journalist has been shot, the police are on their way! Oh and here is you master key, please investigate each of the guests rooms then head back to the Journalist's room!\"";
             case 2:
                 return "";
             case 3:

@@ -398,7 +398,8 @@ MonoBehaviour:
   m_text: 'There it is. That took awhile...
 
 
-    At least I have the key now'
+    At least I have the key now, E
+    to exit'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -1070,7 +1071,7 @@ GameObject:
   - component: {fileID: 210239722}
   - component: {fileID: 210239723}
   - component: {fileID: 210239724}
-  - component: {fileID: 210239725}
+  - component: {fileID: 210239726}
   m_Layer: 0
   m_Name: Base
   m_TagString: Clock
@@ -1184,7 +1185,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   audioSource: {fileID: 1573937892}
---- !u!114 &210239725
+--- !u!114 &210239726
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1193,9 +1194,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 210239720}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9839fcce9ef95474aa68a3f1d05fb14c, type: 3}
+  m_Script: {fileID: 11500000, guid: e3942de3783ef5c458f5798b802e8bb5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Ui: {fileID: 677893565}
 --- !u!1 &228304102
 GameObject:
   m_ObjectHideFlags: 0
@@ -1663,7 +1665,7 @@ MonoBehaviour:
 
 
     you would think
-    we would stock more...'
+    we would stock more..., E to exit'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -1942,7 +1944,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Left click on and object and drag it away with the mouse
+  m_text: Left click on and object and drag it away with the mouse, E to exit
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -3528,7 +3530,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Strange diagram... Perhaps its a reference for a code somewhere...
+  m_text: Strange diagram... Perhaps its a reference for a code somewhere..., E to
+    exit
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -4198,6 +4201,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9839fcce9ef95474aa68a3f1d05fb14c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &677893565 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 649272280082314689, guid: 10476f533a5088d489353d4fa2a07dc0, type: 3}
+  m_PrefabInstance: {fileID: 1734643435}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &678071750
 GameObject:
   m_ObjectHideFlags: 0
@@ -5518,6 +5526,8 @@ GameObject:
   m_Component:
   - component: {fileID: 969745600}
   - component: {fileID: 969745599}
+  - component: {fileID: 969745602}
+  - component: {fileID: 969745601}
   m_Layer: 0
   m_Name: Board
   m_TagString: Board
@@ -5592,6 +5602,45 @@ Transform:
   m_Father: {fileID: 1724838759}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!61 &969745601
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 969745598}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1, y: 1}
+    newSize: {x: 1, y: 1}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1}
+  m_EdgeRadius: 0
+--- !u!114 &969745602
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 969745598}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e3942de3783ef5c458f5798b802e8bb5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Ui: {fileID: 677893565}
 --- !u!1 &1002191704
 GameObject:
   m_ObjectHideFlags: 0
@@ -5973,6 +6022,8 @@ GameObject:
   m_Component:
   - component: {fileID: 1146881126}
   - component: {fileID: 1146881127}
+  - component: {fileID: 1146881129}
+  - component: {fileID: 1146881128}
   m_Layer: 0
   m_Name: Back
   m_TagString: DeskDrawer
@@ -6047,6 +6098,45 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1146881128
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1146881125}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e3942de3783ef5c458f5798b802e8bb5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Ui: {fileID: 677893565}
+--- !u!61 &1146881129
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1146881125}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 9.3, y: 7.2}
+    newSize: {x: 1, y: 1}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 9.3, y: 7.2}
+  m_EdgeRadius: 0
 --- !u!1 &1155997679
 GameObject:
   m_ObjectHideFlags: 0
@@ -6663,6 +6753,7 @@ GameObject:
   - component: {fileID: 1314789540}
   - component: {fileID: 1314789542}
   - component: {fileID: 1314789543}
+  - component: {fileID: 1314789544}
   m_Layer: 0
   m_Name: Vending
   m_TagString: Vending
@@ -6763,6 +6854,19 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 7.42, y: 11.98}
   m_EdgeRadius: 0
+--- !u!114 &1314789544
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1314789539}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e3942de3783ef5c458f5798b802e8bb5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Ui: {fileID: 677893565}
 --- !u!1 &1332271632
 GameObject:
   m_ObjectHideFlags: 0
@@ -9449,6 +9553,7 @@ GameObject:
   - component: {fileID: 1724838759}
   - component: {fileID: 1724838760}
   - component: {fileID: 1724838761}
+  - component: {fileID: 1724838762}
   m_Layer: 0
   m_Name: Meassage Board
   m_TagString: Board
@@ -9514,6 +9619,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9839fcce9ef95474aa68a3f1d05fb14c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &1724838762
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1724838758}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e3942de3783ef5c458f5798b802e8bb5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Ui: {fileID: 677893565}
 --- !u!1001 &1734643435
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -9744,7 +9862,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Press 'E'
+  m_text: Mouse Click
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -10171,6 +10289,7 @@ GameObject:
   - component: {fileID: 1816750435}
   - component: {fileID: 1816750438}
   - component: {fileID: 1816750437}
+  - component: {fileID: 1816750439}
   m_Layer: 0
   m_Name: File Cabinet
   m_TagString: FileCabinet
@@ -10271,6 +10390,19 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1816750439
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1816750434}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e3942de3783ef5c458f5798b802e8bb5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Ui: {fileID: 677893565}
 --- !u!1 &1822540367
 GameObject:
   m_ObjectHideFlags: 0
@@ -10639,6 +10771,24 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1894320956}
   m_CullTransparentMesh: 1
+--- !u!1 &1906938209 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5264394816793672348, guid: f5ef8698c353abb44ae9244733791434, type: 3}
+  m_PrefabInstance: {fileID: 1521412882}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1906938211
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1906938209}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e3942de3783ef5c458f5798b802e8bb5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Ui: {fileID: 677893565}
 --- !u!1001 &1922281113
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -11989,3 +12139,21 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
+--- !u!1 &2108702568 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5264394816793672348, guid: f5ef8698c353abb44ae9244733791434, type: 3}
+  m_PrefabInstance: {fileID: 1922281113}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &2108702570
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2108702568}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e3942de3783ef5c458f5798b802e8bb5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Ui: {fileID: 677893565}

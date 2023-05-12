@@ -49,26 +49,38 @@ public class toggleInteractUI : MonoBehaviour {
                 checkInput = false;
 
             //interaction
-            if (Input.GetKeyDown(KeyCode.E))
+            /*if (Input.GetMouseButtonDown(0))
             {
-                if (_playerOver && !draUITest)
+                enable();
+            }*/
+            if (Input.GetKeyDown(KeyCode.E)){
+                disable();
+            }
+        }
+    }
+
+    public void enable(Collider2D other){
+        _otherColider = other;
+        if (!draUITest)
                 {
                     Player.canMove = false;
                     draUITest = true;
                 }
-                else if (_playerOver && draUITest)
+    }
+
+    public void disable(){
+        if (draUITest)
                 {
                     Player.canMove = true;
                     draUITest = false;
                 }
-            }
-        }
     }
+
     void FixedUpdate() {
         if (sceneCheck) {
             //This will test if the player is over the object
             //and if the player pressed 'E' while over this object
-            if (_playerOver && draUITest)
+            if (draUITest)
             {
                 if (_otherColider.CompareTag("Drawer"))
                     _UI[0].SetActive(true);                 //Turn on the Drawer UI object
@@ -96,7 +108,7 @@ public class toggleInteractUI : MonoBehaviour {
                 else if (_otherColider.CompareTag("Clock") && clockCheck)
                     _UI[7].SetActive(true);
             }
-            else if (_playerOver && !draUITest)
+            else if (!draUITest)
             {
                 for (int i = 0; i < _UI.Length; i++)
                     _UI[i].SetActive(false);
@@ -104,7 +116,7 @@ public class toggleInteractUI : MonoBehaviour {
         }
     }
 
-    private void OnTriggerEnter2D(Collider2D other) {
+    /*private void OnTriggerEnter2D(Collider2D other) {
         if (other.CompareTag("Drawer") || other.CompareTag("Board") || other.CompareTag("FileCabinet") || other.CompareTag("Vending")
             || other.CompareTag("DeskDrawer") || other.CompareTag("Clock")) { 
             Debug.Log("On Object");
@@ -112,13 +124,13 @@ public class toggleInteractUI : MonoBehaviour {
             interactUI.SetActive(true);
             _playerOver = true; // truns the playerover flag true for the player script
         } 
-    }
+    }*/
 
     //When the player leaves this objects collider, it will trun off both the flag and the interaction UI
-    private void OnTriggerExit2D(Collider2D other) {
+    /*private void OnTriggerExit2D(Collider2D other) {
         interactUI.SetActive(false);
         _playerOver = false;
         _otherColider = null;
         VenkeyCheck = false;
-    }
+    }*/
 }
