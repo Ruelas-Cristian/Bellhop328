@@ -101,7 +101,7 @@ public class Player : MonoBehaviour
 
                 keyCodeIndex = 0;
             }
-        } else if (Input.anyKeyDown && !Input.GetKeyDown(KeyCode.E) && !Input.GetKeyDown(KeyCode.A) && !Input.GetKeyDown(KeyCode.D)) {
+        } else if (Input.anyKeyDown && !Input.GetKeyDown(KeyCode.E) && !Input.GetKeyDown(KeyCode.A) && !Input.GetKeyDown(KeyCode.D) && !Input.GetMouseButtonDown(0) && !Input.GetMouseButtonDown(1) && !Input.GetMouseButtonDown(2)) {
             Debug.Log("Wrong Key Press... Start over");
             keyCodeIndex = 0;
             toggleInteractUI.checkVenPass = false;
