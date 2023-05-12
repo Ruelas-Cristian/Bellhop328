@@ -4,22 +4,10 @@ using UnityEngine;
 
 public class MouseClickInput : MonoBehaviour
 {
-    private bool interactableEnabled = false;
-
-    void Update(){
-        /*if(interactableEnabled){
-            interactableEnabled = !interactableEnabled;
-        }*/
-    }
-
-    private void OnMouseDown(){
-        print("Enabled");
-        if(this.TryGetComponent(out Interactable interactable) && !interactableEnabled){
+    void OnMouseDown(){
+        Debug.Log("Clicked On!");
+        if(this.TryGetComponent(out Interactable interactable)){
                 interactable.enable();
-                interactableEnabled = true;
-            } else if(this.TryGetComponent(out Interactable interactableout) && interactableEnabled){
-                interactableout.disable();
-                interactableEnabled = false;
             }
     }
 

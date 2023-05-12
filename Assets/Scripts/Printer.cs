@@ -7,6 +7,7 @@ using TMPro;
 public class Printer : MonoBehaviour, Interactable
 {
     [SerializeField] TextMeshProUGUI TalkingText;
+    public GameObject Sam;
     public Sprite paper;
     public Sprite printer1;
     public Sprite printer2;
@@ -74,7 +75,7 @@ public class Printer : MonoBehaviour, Interactable
         led.GetComponent<SpriteRenderer>().color = Color.green;
         TalkingText.text = "Printing complete Press E To View";
         printed = true;
-        this.GetComponent<SpriteRenderer>().sprite = printer2;
+        Sam.GetComponent<SpriteRenderer>().sprite = printer2;
         Invoke("stopPrinting", 2.0f);
     }
 
@@ -82,7 +83,7 @@ public class Printer : MonoBehaviour, Interactable
         if(other.GetComponent<Draggable>() && other.CompareTag("Paper")){
             haspaper = true;
             Destroy(other.gameObject);
-            this.GetComponent<SpriteRenderer>().sprite = printer1;
+            Sam.GetComponent<SpriteRenderer>().sprite = printer1;
         } else if(other.GetComponent<Draggable>() && other.CompareTag("Ink")){
             led.GetComponent<SpriteRenderer>().color = Color.blue;
             hasink = true;

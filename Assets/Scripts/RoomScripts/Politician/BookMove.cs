@@ -21,13 +21,13 @@ public class BookMove : MonoBehaviour, Interactable
         if (this.GetComponent<NewsPaper>()){
             this.GetComponent<NewsPaper>().set();
         }
-        Invoke("stop", 2.0f);
+        Invoke("stop", 4.0f);
     }
 
     public void disable(){
         viewport.SetActive(true);
         viewport.GetComponent<Image>().sprite = picture;
-        Invoke("stop", 2.0f);
+        Invoke("stop", 4.0f);
     }
 
     // Update is called once per frame

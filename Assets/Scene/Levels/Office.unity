@@ -1070,6 +1070,7 @@ GameObject:
   - component: {fileID: 210239722}
   - component: {fileID: 210239723}
   - component: {fileID: 210239724}
+  - component: {fileID: 210239725}
   m_Layer: 0
   m_Name: Base
   m_TagString: Clock
@@ -1183,6 +1184,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   audioSource: {fileID: 1573937892}
+--- !u!114 &210239725
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 210239720}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9839fcce9ef95474aa68a3f1d05fb14c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &228304102
 GameObject:
   m_ObjectHideFlags: 0
@@ -4168,6 +4181,23 @@ PrefabInstance:
     m_RemovedComponents: []
     m_AddedGameObjects: []
   m_SourcePrefab: {fileID: 100100000, guid: 63352c459bbb05048af4d7b8ca32984c, type: 3}
+--- !u!1 &663258069 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2171050546560727458, guid: 63352c459bbb05048af4d7b8ca32984c, type: 3}
+  m_PrefabInstance: {fileID: 663258068}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &663258070
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 663258069}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9839fcce9ef95474aa68a3f1d05fb14c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &678071750
 GameObject:
   m_ObjectHideFlags: 0
@@ -8202,6 +8232,23 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 2403944856452246807, guid: f5ef8698c353abb44ae9244733791434, type: 3}
   m_PrefabInstance: {fileID: 1521412882}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1521412884 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6663877876660482011, guid: f5ef8698c353abb44ae9244733791434, type: 3}
+  m_PrefabInstance: {fileID: 1521412882}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1521412885
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1521412884}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9839fcce9ef95474aa68a3f1d05fb14c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1521804259
 GameObject:
   m_ObjectHideFlags: 0
@@ -9401,6 +9448,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1724838759}
   - component: {fileID: 1724838760}
+  - component: {fileID: 1724838761}
   m_Layer: 0
   m_Name: Meassage Board
   m_TagString: Board
@@ -9454,6 +9502,18 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 3.5, y: 3}
   m_EdgeRadius: 0
+--- !u!114 &1724838761
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1724838758}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9839fcce9ef95474aa68a3f1d05fb14c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1734643435
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -10703,6 +10763,23 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 2403944856452246807, guid: f5ef8698c353abb44ae9244733791434, type: 3}
   m_PrefabInstance: {fileID: 1922281113}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1922281115 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6663877876660482011, guid: f5ef8698c353abb44ae9244733791434, type: 3}
+  m_PrefabInstance: {fileID: 1922281113}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1922281116
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1922281115}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9839fcce9ef95474aa68a3f1d05fb14c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1940680003
 GameObject:
   m_ObjectHideFlags: 0

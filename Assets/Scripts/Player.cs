@@ -57,7 +57,7 @@ public class Player : MonoBehaviour
         Flip();
 
         //code for interactions
-        if(itemObject && Input.GetKeyDown(KeyCode.E)){
+        /*if(itemObject && Input.GetKeyDown(KeyCode.E)){
             if(itemObject.TryGetComponent(out Interactable interactable) && !interactableEnabled){
                 interactable.enable();
                 interactableEnabled = true;
@@ -65,7 +65,7 @@ public class Player : MonoBehaviour
                 interactableout.disable();
                 interactableEnabled = false;
             }
-        }
+        }*/
         if(!itemObject && interactableEnabled){
             interactableEnabled = !interactableEnabled;
         }
@@ -126,12 +126,12 @@ public class Player : MonoBehaviour
     }
 
 
-    private void OnTriggerEnter2D(Collider2D other){
+    /*private void OnTriggerEnter2D(Collider2D other){
         Debug.Log("On Object");
         if(other.CompareTag("Interactable")){
             itemObject = other.gameObject;
         }
-    }
+    }*/
 
     private void OnTriggerExit2D(Collider2D other){
         itemObject = null;

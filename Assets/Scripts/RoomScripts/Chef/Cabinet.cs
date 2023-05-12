@@ -18,7 +18,7 @@ public class Cabinet : MonoBehaviour, Interactable
     void Start()
     {
         viewport.SetActive(false);
-        book.GetComponent<Rigidbody2D>().simulated= false;
+        book.SetActive(false);
         //book.SetActive(false);
     }
 
@@ -50,6 +50,7 @@ public class Cabinet : MonoBehaviour, Interactable
     public void Open(){
             key = true;
             this.GetComponent<SpriteRenderer>().sprite = opened;
+            book.SetActive(true);
             TalkingText.text = "Press E to view Image";
             Invoke("stop", 2.0f);
     }
